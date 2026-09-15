@@ -1,0 +1,19 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+
+    background-image: url("../images/Green Hill Zone.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.content {
+    width: 90%;
+    max-width: 750px;
+
+    margin: 40px auto;
+    padding: 24px;
+
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+}
