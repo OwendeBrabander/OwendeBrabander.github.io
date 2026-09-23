@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main class="content">
-    <nav>
-        <ul>
+    
+    <nav class="nav-list">
+        <ul> 
             <li>
                 <a href="index.html">Wie ben ik?</a>
             </li>
@@ -21,7 +21,8 @@
             </li>
         </ul>
     </nav>
-    
+
+    <main class="content">
     <h1 id="title">Owen de Brabander's eerste website!</h1>
     <img src="images/ik.jpg" alt="Een foto van Owende Brabander" width="200">
 
@@ -33,6 +34,21 @@
     <p>Ik ben volledig nieuw in programmeren en webdevelopment. Elke schooldag heb ik last van spanning voor alle nieuwe dingen die ik moet gaan leren. Maar na eenmaal gewenning gaan de zorgen meestal wel weg</p>
     <p>In mijn vrije tijd hou ik van het spelen van video games en het kijken naar youtube filmpjes.</p>
     <p> Rondom nieuwe mensen ben ik meestal verlegen, maar om de goeie mensen ben ik een gezellige boel.</p>
+
+    <form id="contact-form" novalidate>
+<label for="naam">Naam</label>
+<input id="naam" required minlength="2" aria-describedby="naam-error" aria-invalid="false">
+<span id="naam-error" role="alert"></span>
+<label for="email">E-mail</label>
+<input id="email" type="email" required aria-describedby="email-error" aria-invalid="false">
+<span id="email-error" role="alert"></span>
+<label for="bericht">Bericht</label>
+<textarea id="bericht" required minlength="10" aria-describedby="bericht-error" ariainvalid="false"></textarea>
+<span id="bericht-error" role="alert"></span>
+<button type="submit">Versturen</button>
+<div id="form-status" aria-live="polite"></div>
+</form>
+<script src="./script.js"></script>
 </main>
 </body>
 </html>
