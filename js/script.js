@@ -1,3 +1,4 @@
+//contact formulier validatie in wie ben ik
 const form = document.querySelector("#contact-form");
 const velden = [
 { id: "naam", boodschap: "Vul minimaal 2 tekens in." },

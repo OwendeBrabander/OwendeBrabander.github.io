@@ -25,9 +25,16 @@
     
 <main class="content">
     <h1>Projecten</h1>
-    <h2>1.Mijn website</h2>
-    <p>Dit is mijn eerste website die ik heb gemaakt. Ik zal er constant aan toevoegen dit semester om zoveel mogelijk te leren over het zijn van een webprogrammer</p>
     
+    <div class=" filter-doos">
+        <label for="categorie-filter">Filter op categorie:</label>
+        <select id="categorie-filter">
+            <option value="Alle categorieën">Alle categorieën</option>
+        </select>
+    </div>
+
+    <div id="projecten-doos"></div>
     </main>
+    <script src="js/projecten.js"></script>
 </body>
 </html>
