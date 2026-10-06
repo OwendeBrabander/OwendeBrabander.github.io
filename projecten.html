@@ -9,7 +9,8 @@
 </head>
 <body>
     
-    <nav class="nav-list">
+<header>
+    <nav class="nav-list" aria-label="Hoofdnavigatie">
         <ul>
             <li>
                 <a href="index.html">Wie ben ik?</a>
@@ -22,19 +23,30 @@
             </li>
         </ul>
     </nav>
+    </header>
     
-<main class="content">
+<main>
+    <header class="content-green">
     <h1>Projecten</h1>
-    
+    <p>Hieronder staan de projecten die ik heb gemaakt tijdens mijn opleiding of gekke andere projecten die ik onderhoudt in mijn vrije tijd.</p>
+    </header>
+
+    <section class="content-red">
     <div class=" filter-doos">
         <label for="categorie-filter">Filter op categorie:</label>
         <select id="categorie-filter">
             <option value="Alle categorieën">Alle categorieën</option>
         </select>
     </div>
+    </section>
 
+    <section class="content-blue">
     <div id="projecten-doos"></div>
+    </section>
     </main>
+    <footer class="site-footer">
+    <p>&copy; 2026, Owen de Brabander</p>
+    </footer>
     <script src="js/projecten.js"></script>
 </body>
 </html>

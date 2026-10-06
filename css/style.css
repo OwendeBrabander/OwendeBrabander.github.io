@@ -7,15 +7,40 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
-.content {
+.content-blue {
     width: 90%;
     max-width: 750px;
 
     margin: 40px auto;
     padding: 24px;
 
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(8, 165, 232, 0.9);
     border-radius: 16px;
+    border: 10px solid #fbff01;
+}
+
+.content-green {
+    width: 90%;
+    max-width: 750px;
+
+    margin: 40px auto;
+    padding: 24px;
+
+    background-color: rgba(8, 237, 42, 0.9);
+    border-radius: 16px;
+    border: 10px solid #fbff01;
+}
+
+.content-red {
+    width: 90%;
+    max-width: 750px;
+
+    margin: 40px auto;
+    padding: 24px;
+
+    background-color: rgba(237, 6, 6, 0.9);
+    border-radius: 16px;
+    border: 10px solid #fbff01;
 }
 
 .nav-list ul {
@@ -45,4 +70,22 @@ body {
 
 .nav-list a:hover {
     background-color: #3b82f6;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+/* geeft invalid regels een rode rand en een lichtrode achtergrondkleur */
+.form-group input[aria-invalid="true"],
+.form-group textarea[aria-invalid="true"] {
+    border-color: #b91c1c;
+    background-color: #cb3f3f;
 }
