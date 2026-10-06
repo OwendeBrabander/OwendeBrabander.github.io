@@ -43,6 +43,18 @@ body {
     border: 10px solid #fbff01;
 }
 
+.content-orange {
+    width: 90%;
+    max-width: 750px;
+
+    margin: 40px auto;
+    padding: 24px;
+
+    background-color: rgba(241, 174, 6, 0.9);
+    border-radius: 16px;
+    border: 10px solid #fbff01;
+}
+
 .nav-list ul {
     list-style: none;
     padding: 0;
