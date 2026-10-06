@@ -89,3 +89,34 @@ body {
     border-color: #b91c1c;
     background-color: #cb3f3f;
 }
+
+#weer-formulier {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#weer-formulier button {
+    align-self: flex-start;
+    padding: 10px 18px;
+
+    color: white;
+    background-color: #1e3a8a;
+
+    border: none;
+    border-radius: 8px;
+
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#weer-formulier button:hover {
+    background-color: #2563eb;
+}
+
+#weer-resultaat {
+    padding: 16px;
+
+    background-color: white;
+}

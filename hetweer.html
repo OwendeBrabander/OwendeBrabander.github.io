@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Het weer | Owen de Brabander</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-list" aria-label="Hoofdnavigatie">
+            <ul>
+                <li>
+                    <a href="index.html">Wie ben ik?</a>
+                </li>
+                <li>
+                    <a href="projecten.html">Projecten</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="hetweer.html">Het weer</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <header class="content-green">
+            <h1>Het actuele weer</h1>
+
+            <p>
+                Vul een locatie in om de actuele weersinformatie op te halen.
+            </p>
+        </header>
+
+        <section class="content-blue" aria-labelledby="weerzoeker-titel">
+            <h2 id="weerzoeker-titel">Zoek een locatie</h2>
+
+            <form id="weer-formulier">
+                <div class="form-group">
+                    <label for="locatie">Plaatsnaam</label>
+
+                    <input
+                        id="locatie"
+                        type="text"
+                        required
+                        minlength="2"
+                        placeholder="Bijvoorbeeld Zoetermeer"
+                    >
+                </div>
+
+                <button type="submit">Bekijk het weer</button>
+            </form>
+        </section>
+
+        <section
+            class="content-red"
+            aria-labelledby="weerresultaat-titel"
+        >
+            <h2 id="weerresultaat-titel">Weerresultaat</h2>
+
+            <p id="weer-status" aria-live="polite">
+                Vul hierboven een locatie in.
+            </p>
+
+            <div id="weer-resultaat"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Owen de Brabander</p>
+    </footer>
+
+    <script src="js/weer.js"></script>
+</body>
+</html>
